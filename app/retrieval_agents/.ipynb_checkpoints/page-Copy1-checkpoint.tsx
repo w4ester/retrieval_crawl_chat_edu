@@ -4,22 +4,22 @@ export default function AgentsPage() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
-        ▲ SmartLocal Agent
+        Local Agent
       </h1>
       <ul>
         <li className="hidden text-l md:block">
           🤝
           <span className="ml-2">
-            This template showcases a{" "}
-            <a href="https://js.langchain.com/" target="_blank">
-              LangChain.js
+            This agent will retrieve data from a vectordatabase a{" "}
+            <a href="https://example.com" target="_blank">
+              upload
             </a>{" "}
-            retrieval chain and the Vercel{" "}
-            <a href="https://sdk.vercel.ai/docs" target="_blank">
-              AI SDK
+            ask input {" "}
+            <a href="https://example.com" target="_blank">
+              retrieveal for output.
             </a>{" "}
             in a{" "}
-            <a href="https://nextjs.org/" target="_blank">
+            <a href="https://example.com" target="_blank">
               Next.js
             </a>{" "}
             project.
@@ -43,7 +43,7 @@ export default function AgentsPage() {
         <li>
           🤖
           <span className="ml-2">
-            By default, the agent is pretending to be a robot, but you can
+            By default, the agent is prompted to be a very pragmatic answerer, but you can
             change the prompt to whatever you want!
           </span>
         </li>
@@ -57,7 +57,7 @@ export default function AgentsPage() {
         <li className="text-l">
           🐙
           <span className="ml-2">
-            This template is open source - you can see the source code and
+            This demo is looking at retrieval in a chatbot.
             deploy your own version{" "}
             <a
               href="https://github.com/w4ester/retrieval_crawl_chat_edu"
@@ -78,8 +78,8 @@ export default function AgentsPage() {
         <li className="text-l">
           👇
           <span className="ml-2">
-            Upload some text, then try asking e.g.{" "}
-            <code>What are some ways of doing retrieval in LangChain?</code>{" "}
+            Upload text, then ask e.g.{" "}
+            <code> What are some ways of doing retrieval?</code>{" "}
             below!
           </span>
         </li>
@@ -93,7 +93,7 @@ export default function AgentsPage() {
       showIngestForm={true}
       showIntermediateStepsToggle={true}
       placeholder={
-        'Howdy! I\'m an retrieval-focused agent! Ask, "What are some ways of doing retrieval in LangChain.js?"'
+        'Howdy! I\'m an retrieval-focused agent. Ask what are ways to do retrieval in LangChain'
       }
       emoji="🤖"
       titleText="June the Reliable Agent"

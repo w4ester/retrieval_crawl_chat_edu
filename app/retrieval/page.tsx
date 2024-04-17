@@ -4,25 +4,21 @@ export default function AgentsPage() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
-        ▲ Next.js + LangChain.js Retrieval Chain 🦜🔗
+        Agent Retrieval Chain Page
       </h1>
       <ul>
         <li className="hidden text-l md:block">
           🔗
           <span className="ml-2">
-            This template showcases how to perform retrieval with a{" "}
-            <a href="https://js.langchain.com/" target="_blank">
-              LangChain.js
+            This example shows how to perform retrieval with {" "}
+            <a href="https://example.com/" target="_blank">
+              LangChain
             </a>{" "}
-            chain and the Vercel{" "}
-            <a href="https://sdk.vercel.ai/docs" target="_blank">
-              AI SDK
+            in friendly partner interfce. {" "}
+            <a href="https://example.com " target="_blank">
+              Now lets explain.
             </a>{" "}
-            in a{" "}
-            <a href="https://nextjs.org/" target="_blank">
-              Next.js
-            </a>{" "}
-            project.
+           
           </span>
         </li>
         <li className="hidden text-l md:block">
@@ -56,8 +52,8 @@ export default function AgentsPage() {
         <li>
           🐶
           <span className="ml-2">
-            By default, the agent is pretending to be a talking puppy, but you
-            can change the prompt to whatever you want!
+            By default, the agent is prompted to be a guide on data, but you
+            can change the prompt within your query below when you type.
           </span>
         </li>
         <li className="text-l">
@@ -67,20 +63,7 @@ export default function AgentsPage() {
             <code>app/retrieval/page.tsx</code>.
           </span>
         </li>
-        <li className="text-l">
-          🐙
-          <span className="ml-2">
-            This template is open source - you can see the source code and
-            deploy your own version{" "}
-            <a
-              href="https://github.com/langchain-ai/langchain-nextjs-template"
-              target="_blank"
-            >
-              from the GitHub repo
-            </a>
-            !
-          </span>
-        </li>
+        
         <li className="hidden text-l md:block">
           🔱
           <span className="ml-2">
@@ -92,7 +75,7 @@ export default function AgentsPage() {
           👇
           <span className="ml-2">
             Upload some text, then try asking e.g.{" "}
-            <code>What is a document loader?</code> below!
+            <code> What is a document loader?</code> below.
           </span>
         </li>
       </ul>
@@ -104,10 +87,10 @@ export default function AgentsPage() {
       emptyStateComponent={InfoCard}
       showIngestForm={true}
       placeholder={
-        'I\'ve got a nose for finding the right documents! Ask, "What is a document loader?"'
+        'Document Loader...Ask in the box What is a document loader?'
       }
-      emoji="🐶"
-      titleText="Dana the Document-Retrieving Dog"
+      emoji=""
+      titleText="June the Document-Retrieving Agent"
     ></ChatWindow>
   );
 }

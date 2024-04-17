@@ -10,25 +10,25 @@ export default function AgentsPage() {
         <li className="text-l">
           🤝
           <span className="ml-2">
-            This template showcases a{" "}
-            <a href="https://js.langchain.com/" target="_blank">
-              LangChain.js
+            Meet our local chat bot with llm acting as a tutor for academic support. a{" "}
+            <a href="https://example.com" target="_blank">
+              Prompted to be Patient
             </a>{" "}
-            agent and the Vercel{" "}
-            <a href="https://sdk.vercel.ai/docs" target="_blank">
-              AI SDK
+            agent. And will stay continuously {" "}
+            <a href="https://example.com" target="_blank">
+              Supportive,
             </a>{" "}
             in a{" "}
-            <a href="https://nextjs.org/" target="_blank">
-              Next.js
+            <a href="https://example.com/" target="_blank">
+              Respectful
             </a>{" "}
-            project.
+            manner.
           </span>
         </li>
         <li>
           🛠️
           <span className="ml-2">
-            The agent has memory and access to a search engine and a calculator.
+            The agent has memory and access to a search a vector database and a calculator.
           </span>
         </li>
         <li className="hidden text-l md:block">
@@ -41,8 +41,7 @@ export default function AgentsPage() {
         <li>
           🦜
           <span className="ml-2">
-            By default, the agent is pretending to be a talking parrot, but you
-            can the prompt to whatever you want!
+            By default, the agent is pretending to be an academic tutor.
           </span>
         </li>
         <li className="hidden text-l md:block">
@@ -55,21 +54,21 @@ export default function AgentsPage() {
         <li className="text-l">
           🐙
           <span className="ml-2">
-            This template is open source - you can see the source code and
-            deploy your own version{" "}
+            In this moment please demo. The build is agnotstic to a company, no ads, no data taken from you.
+            This is local untethered ai. It is built in a container and does not need the internet, but only can connect if programmed.{" "}
             <a
               href="https://github.com/langchain-ai/langchain-nextjs-template"
               target="_blank"
             >
-              from the GitHub repo
+              Maybe this can be helpful if we discuss how to properly use it for education.
             </a>
-            !
+            .
           </span>
         </li>
         <li className="text-l">
           👇
           <span className="ml-2">
-            Try asking e.g. <code>What is the weather in Honolulu?</code> below!
+            Try out the chat e.g. <code> Start with a question about your favorite book?</code>
           </span>
         </li>
       </ul>
@@ -79,9 +78,9 @@ export default function AgentsPage() {
     <ChatWindow
       endpoint="api/chat/agents"
       emptyStateComponent={InfoCard}
-      placeholder="Squawk! I'm a conversational agent! Ask me about the current weather in Honolulu!"
+      placeholder="I am so glad you are here...truly look forward your interaction. I hope you are ready to learn!"
       titleText="June"
-      emoji="🦜"
+      emoji=""
       showIntermediateStepsToggle={true}
     ></ChatWindow>
   );
