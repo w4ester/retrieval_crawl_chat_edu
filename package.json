@@ -1,5 +1,5 @@
 {
-  "name": "langchain-nextjs-template",
+  "name": "retrieval_crawl_chat_edu",
   "version": "0.0.0",
   "private": true,
   "scripts": {

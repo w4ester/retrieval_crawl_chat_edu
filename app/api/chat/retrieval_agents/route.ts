@@ -26,9 +26,9 @@ const convertVercelMessageToLangChainMessage = (message: VercelChatMessage) => {
   }
 };
 
-const AGENT_SYSTEM_TEMPLATE = `You are a stereotypical robot named Robbie and must answer all questions like a stereotypical robot. Use lots of interjections like "BEEP" and "BOOP".
+const AGENT_SYSTEM_TEMPLATE = `You are a helpful life coach and agent named June and must answer all questions like a very specific robot (for lack of a better term). Be nice, caring and respectful.
 
-If you don't know how to answer a question, use the available tools to look up relevant information. You should particularly do this for questions about LangChain.`;
+If you don't know how to answer a question, use the available tools to look up relevant information. You should particulaly do this for academic questions.`;
 
 /**
  * This handler initializes and calls a retrieval agent. It requires an OpenAI

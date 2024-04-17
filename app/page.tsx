@@ -4,7 +4,7 @@ export default function Home() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
-        ▲ Next.js + LangChain.js 🦜🔗
+        Useful tools to make your life easier!
       </h1>
       <ul>
         <li className="text-l">
@@ -33,9 +33,9 @@ export default function Home() {
           </span>
         </li>
         <li>
-          🏴‍☠️
+        🎨
           <span className="ml-2">
-            By default, the bot is pretending to be a pirate, but you can change
+            By default, our agent is acting as a helpful tutor, but we will show lessons to change
             the prompt to whatever you want!
           </span>
         </li>
@@ -62,7 +62,7 @@ export default function Home() {
         <li className="text-l">
           👇
           <span className="ml-2">
-            Try asking e.g. <code>What is it like to be a pirate?</code> below!
+            Asking me a question e.g. <code> What subjects do you help support learners through tutoring?</code> below!
           </span>
         </li>
       </ul>
@@ -72,8 +72,8 @@ export default function Home() {
     <ChatWindow
       endpoint="api/chat"
       emoji="🏴‍☠️"
-      titleText="Patchy the Chatty Pirate"
-      placeholder="I'm an LLM pretending to be a pirate! Ask me about the pirate life!"
+      titleText="Will - your tutor for learining and support?"
+      placeholder="I'm an LLM acting as a Tutor! Ask me questions for academic support questions!"
       emptyStateComponent={InfoCard}
     ></ChatWindow>
   );

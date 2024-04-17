@@ -4,17 +4,17 @@ export default function AgentsPage() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
-        Agents Page
+        ▲ SmartLocal Agent
       </h1>
       <ul>
-        <li className="text-l">
+        <li className="hidden text-l md:block">
           🤝
           <span className="ml-2">
             This template showcases a{" "}
             <a href="https://js.langchain.com/" target="_blank">
               LangChain.js
             </a>{" "}
-            agent and the Vercel{" "}
+            retrieval chain and the Vercel{" "}
             <a href="https://sdk.vercel.ai/docs" target="_blank">
               AI SDK
             </a>{" "}
@@ -25,31 +25,33 @@ export default function AgentsPage() {
             project.
           </span>
         </li>
-        <li>
+        <li className="hidden text-l md:block">
           🛠️
           <span className="ml-2">
-            The agent has memory and access to a search engine and a calculator.
+            The agent has access to a vector store retriever as a tool as well
+            as a memory. It&apos;s particularly well suited to meta-questions
+            about the current conversation.
           </span>
         </li>
         <li className="hidden text-l md:block">
           💻
           <span className="ml-2">
             You can find the prompt and model logic for this use-case in{" "}
-            <code>app/api/chat/agents/route.ts</code>.
+            <code>app/api/chat/retrieval_agents/route.ts</code>.
           </span>
         </li>
         <li>
-          🦜
+          🤖
           <span className="ml-2">
-            By default, the agent is pretending to be a talking parrot, but you
-            can the prompt to whatever you want!
+            By default, the agent is pretending to be a robot, but you can
+            change the prompt to whatever you want!
           </span>
         </li>
         <li className="hidden text-l md:block">
           🎨
           <span className="ml-2">
-            The main frontend logic is found in <code>app/agents/page.tsx</code>
-            .
+            The main frontend logic is found in{" "}
+            <code>app/retrieval_agents/page.tsx</code>.
           </span>
         </li>
         <li className="text-l">
@@ -58,7 +60,7 @@ export default function AgentsPage() {
             This template is open source - you can see the source code and
             deploy your own version{" "}
             <a
-              href="https://github.com/langchain-ai/langchain-nextjs-template"
+              href="https://github.com/w4ester/retrieval_crawl_chat_edu"
               target="_blank"
             >
               from the GitHub repo
@@ -66,10 +68,19 @@ export default function AgentsPage() {
             !
           </span>
         </li>
+        <li className="hidden text-l md:block">
+          🔱
+          <span className="ml-2">
+            Before running this example, you&apos;ll first need to set up a
+            Supabase (or other) vector store. See the README for more details.
+          </span>
+        </li>
         <li className="text-l">
           👇
           <span className="ml-2">
-            Try asking e.g. <code>What is the weather in Honolulu?</code> below!
+            Upload some text, then try asking e.g.{" "}
+            <code>What are some ways of doing retrieval in LangChain?</code>{" "}
+            below!
           </span>
         </li>
       </ul>
@@ -77,12 +88,15 @@ export default function AgentsPage() {
   );
   return (
     <ChatWindow
-      endpoint="api/chat/agents"
+      endpoint="api/chat/retrieval_agents"
       emptyStateComponent={InfoCard}
-      placeholder="Squawk! I'm a conversational agent! Ask me about the current weather in Honolulu!"
-      titleText="June"
-      emoji="🦜"
+      showIngestForm={true}
       showIntermediateStepsToggle={true}
+      placeholder={
+        'Howdy! I\'m an retrieval-focused agent! Ask, "What are some ways of doing retrieval in LangChain.js?"'
+      }
+      emoji="🤖"
+      titleText="June the Reliable Agent"
     ></ChatWindow>
   );
 }
